@@ -324,11 +324,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EMTruncation/ViewController.m"
-            timestampString = "450582694.946076"
+            timestampString = "450584537.379243"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
             landmarkName = "-onButtonPress:"
             landmarkType = "5">
          </BreakpointContent>

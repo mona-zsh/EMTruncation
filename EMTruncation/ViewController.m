@@ -94,7 +94,9 @@ static NSString *text = @"'Begin at the beginning,' the King said, very gravely,
 }
 
 - (void)viewDidLayoutSubviews {
-//    [self updateViews];
+    if ([self.label.attributedText length] == 0) {
+        [self updateViews];
+    }
 }
 
 - (UIButton *)button {
