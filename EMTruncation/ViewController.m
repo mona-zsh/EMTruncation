@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Mona Zhang. All rights reserved.
 //
 
+#import "SVProgressHUD.h"
+
 #import "NSString+Truncate.h"
 
 #import "ViewController.h"
@@ -20,6 +22,7 @@
 
 @end
 
+static NSMutableString *reallyLongString;
 static NSInteger buttonMode = 0;
 static NSString *text = @"'Begin at the beginning,' the King said, very gravely, 'and go on till you come to the end: then stop.'";
 
@@ -35,12 +38,17 @@ static NSString *text = @"'Begin at the beginning,' the King said, very gravely,
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    reallyLongString = [NSMutableString stringWithString:text];
+    for (int i = 0; i < 100; i++) {
+        [reallyLongString appendString:text];
+    }
+    
     self.view.backgroundColor = [UIColor colorWithRed:238/255.0 green:238/255.0 blue:238/255.0 alpha:1];
     [self.view addSubview:self.label];
     [self.view addSubview:self.button];
     [self.view addSubview:self.timeLabel];
-    self.button.hidden = YES;
-    self.timeLabel.hidden = YES;
+
     /*
      Label Constraints:
      - Center X
@@ -86,7 +94,7 @@ static NSString *text = @"'Begin at the beginning,' the King said, very gravely,
 }
 
 - (void)viewDidLayoutSubviews {
-    [self updateViews];
+//    [self updateViews];
 }
 
 - (UIButton *)button {
@@ -142,11 +150,9 @@ static NSString *text = @"'Begin at the beginning,' the King said, very gravely,
 }
 
 - (void)updateViews {
-    self.label.attributedText = [text attributedStringByTruncatingToSize:self.label.frame.size attributes:[self.class attributes] trailingString:@"..." color:[self.class color] truncationMode:(buttonMode % 3)];
-
-//    self.label.text = text;
-    
     NSDate *start = [NSDate date];
+    self.label.attributedText = [reallyLongString attributedStringByTruncatingToSize:self.label.frame.size attributes:[self.class attributes] trailingString:@"..." color:[self.class color] truncationMode:(buttonMode % 3)];
+    
     switch (buttonMode % 3) {
         case (EMTruncationModeSubtraction): {
             [self.button setTitle:@"Subtraction" forState:UIControlStateNormal];

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>129781AA-CE88-40B0-9CD9-B17BD8DDF68E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EMTruncation</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7827DD48B1D0596246F643FCA34B984AFD7674C3</key>
+		<string>https://github.com/mona-zsh/EMTruncation.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>EMTruncation.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7827DD48B1D0596246F643FCA34B984AFD7674C3</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mona-zsh/EMTruncation.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7827DD48B1D0596246F643FCA34B984AFD7674C3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7827DD48B1D0596246F643FCA34B984AFD7674C3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EMTruncation</string>
+		</dict>
+	</array>
+</dict>
+</plist>

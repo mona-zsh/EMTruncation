@@ -172,9 +172,10 @@
     NSInteger midIndex = (minIndex + maxIndex) / 2;
     NSString *subString = [self substringWithRange:NSMakeRange(0, midIndex)];
     
-    // Invariant assertions
+    /* Invariant assertions
     assert([[self substringWithRange:NSMakeRange(0, minIndex)] willFitToSize:size trailingString:trailingString attributes:attributes]);
     assert(![[self substringWithRange:NSMakeRange(0, maxIndex)] willFitToSize:size trailingString:trailingString attributes:attributes]);
+     */
     
     if (maxIndex - minIndex == 1) {
         return minIndex;
